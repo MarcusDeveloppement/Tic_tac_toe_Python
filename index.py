@@ -24,6 +24,14 @@ def check_win():
         return True
     return False
 
+def check_draw():
+    for i in range(3): 
+        for j in range(3):
+            if map[i][j] == ' . ':
+                return False
+    return True
+
+draw()
 while True: 
     choice = int(input(f'{player}[1-9] : '))
     row = (choice - 1) // 3 
@@ -31,4 +39,10 @@ while True:
     if map[row][column] == ' . ':
         map[row][column] = ' X ' if player == 'Joueur 1' else ' O '
     draw()
+    if check_win():
+        print(f'{ player } a gagné !')
+        break
+    if check_draw():
+        print('égalité !')
+        break
     player = 'Joueur 1' if player == 'Joueur 2' else 'Joueur 2'
