@@ -40,14 +40,18 @@ The game is played on a grid that's 3 squares by 3 squares. Players take turns p
 
 ## Sample Game
 
-. . .
-. . .
-. . .
 Joueur 1[1-9]: 1
-X . .
-. . .
-. . .
+
+##### X . .
+
+##### . . .
+
+##### . . .
+
 Joueur 2[1-9]: 5
-X . .
-. O .
-. . .
+
+##### X . .
+
+##### . O .
+
+##### . . .
